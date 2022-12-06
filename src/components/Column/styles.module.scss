@@ -1,0 +1,107 @@
+.root {
+  width: 275px;
+  padding: 8px;
+  color: #172b4d;
+  max-height: 100%;
+  border-radius: 5px;
+  height: fit-content;
+  background: #ebecf0;
+
+  .header {
+    padding: 4px 8px 8px;
+
+    input {
+      font-weight: 600;
+    }
+
+    .title {
+      height: 30px;
+      display: block;
+      padding: 0 4px;
+      cursor: pointer;
+      overflow: hidden;
+      font-weight: 600;
+      line-height: 30px;
+      overflow-wrap: break-word;
+    }
+  }
+
+  .body {
+    .btn-add {
+      padding: 4px;
+      cursor: pointer;
+
+      &:hover {
+        border-radius: 5px;
+        background: #091e4214;
+      }
+    }
+
+    .new-card {
+      &__footer {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.card {
+  cursor: pointer;
+  font-size: 14px;
+  overflow: hidden;
+  font-weight: 400;
+  padding: 6px 8px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 0 #091e4240;
+
+  &:hover {
+    background: #f6f6f6;
+  }
+
+  hr {
+    margin: 4px 0;
+  }
+}
+
+.modal {
+
+  .title {
+    margin-left: 4px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .input-title {
+    margin-bottom: 16px;
+    height: 42px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .comment {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+    hr {
+      margin: 8px 0;
+    }
+
+    p {
+      white-space: break-spaces
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
